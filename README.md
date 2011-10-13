@@ -15,9 +15,10 @@ Demo
 ------
 
 Una demo pubblica non &egrave; ancora disponibile ma &egrave; possibile avviare il file index.htm per effettuare una prova del codice.
-REQUISITI:
+<br>REQUISITI:
 <br>*Il progetto deve essere avviato con apache funzionante*
 <br>*Il computer su cui si avvia il progetto deve essere connesso ad internet*
+<br>*Per poter avviare uTorrent.exe httpd.exe deve essere aperto dall'utente*
 
 Licenza
 -------
