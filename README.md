@@ -2,18 +2,24 @@ PHPTorrent
 ==========
 
 Applicazione che semplifica il download di file .torrent.
-Da un unica pagina tramite chiamate asincrone (ajax) &egrave; possibile vedere i risultati della ricerca, la descrizione del torrent e scaricarlo sul server.
-L'applicazione consente anche di avviare automaticamente uTorrent.exe (Nel caso in cui esso sia installato) il quale se configurato correttamente consente di scaricare file .torrent in automatico
+<br>Da un unica pagina tramite chiamate asincrone (ajax) &egrave; possibile vedere i risultati della ricerca, la descrizione del torrent e scaricarlo sul server.
+<br>L'applicazione consente anche di avviare automaticamente uTorrent.exe (Nel caso in cui esso sia installato) il quale se configurato correttamente consente di scaricare file .torrent in automatico
 
-Status
+Stato
 ------
 
 Il Progetto &egrave; ancora ad una fase sperimentale (Alpha).
-Funziona ed &egrave; abbastanza stabile ma bisogna ancora effettuare molti controlli e potenziare la sicurezza (in particolare per quanto riguarda i download).
+<br>Funziona ed &egrave; abbastanza stabile ma bisogna ancora effettuare molti controlli e potenziare la sicurezza (in particolare per quanto riguarda i download).
 
+Demo
+------
 
+Una demo pubblica non &egrave; ancora disponibile ma &egrave; possibile avviare il file index.htm per effettuare una prova del codice.
+REQUISITI:
+<br>*Il progetto deve essere avviato con apache funzionante*
+<br>*Il computer su cui si avvia il progetto deve essere connesso ad internet*
 
-License
+Licenza
 -------
 
 Copyright (C) 2011  Alessandro Beltramo
