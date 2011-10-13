@@ -1,4 +1,4 @@
-<center>PHPTorrent</center> 
+PHPTorrent
 ==========
 
 Applicazione che semplifica il download di file .torrent.
