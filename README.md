@@ -8,9 +8,9 @@ Applicazione che semplifica il download di file .torrent.
 Stato
 ------
 
-Il Progetto &egrave; ancora ad una fase sperimentale (Alpha).
+Il Progetto &egrave; ancora ad una fase sperimentale (Beta).
 <br>Funziona ed &egrave; abbastanza stabile ma bisogna ancora effettuare molti controlli e potenziare la sicurezza (in particolare per quanto riguarda i download).
-<br> Il cuore del programma &egrave; il file /Project/js/TorrentCorsaroNero.js che contiene le funzioni principali.
+<br> Il cuore del programma &egrave; il file /Project/js/Torrent.js che contiene le funzioni principali.
 <br>Consiglio inoltre di leggere la documentazione allegata in modo da avere un idea degli obiettivi e di ci&ograve; che &egrave; stato realizzato.
 
 Demo
