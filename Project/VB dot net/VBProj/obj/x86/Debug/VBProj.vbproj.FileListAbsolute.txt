@@ -1,0 +1,26 @@
+C:\Users\kakami\AppData\Local\Temporary Projects\VBProj\bin\Debug\VBProj.exe
+C:\Users\kakami\AppData\Local\Temporary Projects\VBProj\bin\Debug\VBProj.pdb
+C:\Users\kakami\AppData\Local\Temporary Projects\VBProj\bin\Debug\VBProj.xml
+C:\Users\kakami\AppData\Local\Temporary Projects\VBProj\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\kakami\AppData\Local\Temporary Projects\VBProj\obj\x86\Debug\VBProj.Form1.resources
+C:\Users\kakami\AppData\Local\Temporary Projects\VBProj\obj\x86\Debug\VBProj.Resources.resources
+C:\Users\kakami\AppData\Local\Temporary Projects\VBProj\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\kakami\AppData\Local\Temporary Projects\VBProj\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\kakami\AppData\Local\Temporary Projects\VBProj\obj\x86\Debug\VBProj.exe
+C:\Users\kakami\AppData\Local\Temporary Projects\VBProj\obj\x86\Debug\VBProj.xml
+C:\Users\kakami\AppData\Local\Temporary Projects\VBProj\obj\x86\Debug\VBProj.pdb
+C:\Users\kakami\PHPTorrent\VBProj\VBProj\obj\x86\Debug\VBProj.exe
+C:\Users\kakami\PHPTorrent\VBProj\VBProj\obj\x86\Debug\VBProj.xml
+C:\Users\kakami\PHPTorrent\VBProj\VBProj\obj\x86\Debug\VBProj.pdb
+C:\Users\kakami\PHPTorrent\VBProj\VBProj\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\kakami\PHPTorrent\VBProj\VBProj\obj\x86\Debug\VBProj.Form1.resources
+C:\Users\kakami\PHPTorrent\VBProj\VBProj\obj\x86\Debug\VBProj.Resources.resources
+C:\Users\kakami\PHPTorrent\VBProj\VBProj\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\kakami\PHPTorrent\VBProj\VBProj\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\kakami\PHPTorrent\VBProj\VBProj\bin\Debug\VBProj.exe
+C:\Users\kakami\PHPTorrent\VBProj\VBProj\bin\Debug\VBProj.pdb
+C:\Users\kakami\PHPTorrent\VBProj\VBProj\bin\Debug\VBProj.xml
+C:\Users\kakami\PHPTorrent\VBProj\VBProj\bin\Debug\HtmlAgilityPack.dll
+C:\Users\kakami\PHPTorrent\Project\VB dot net\VBProj\obj\x86\Debug\VBProj.exe
+C:\Users\kakami\PHPTorrent\Project\VB dot net\VBProj\obj\x86\Debug\VBProj.xml
+C:\Users\kakami\PHPTorrent\Project\VB dot net\VBProj\obj\x86\Debug\VBProj.pdb

@@ -4,6 +4,8 @@ PHPTorrent
 Applicazione che semplifica il download di file .torrent.
 <br>Da un unica pagina tramite chiamate asincrone (ajax) &egrave; possibile vedere i risultati della ricerca, la descrizione del torrent e scaricarlo sul server.
 <br>L'applicazione consente anche di avviare automaticamente uTorrent.exe (Nel caso in cui esso sia installato) il quale se configurato correttamente consente di scaricare file .torrent in automatico
+<br>L'applicazione oltre ad essere codificata per il web (ovvero tramite js e php) &egrave; orientata anche per Windows.
+<br>Nella cartella VB dot Net è presente un progetto di un applicazione che svolge le stesse operazioni tramite un applicativo (.exe)
 
 Stato
 ------
