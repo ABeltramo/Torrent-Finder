@@ -29,11 +29,20 @@ Public Class Form1
     End Sub
 
     Private Sub BtnDow_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnDow.Click
-        Dim s As New StreamWriter("/Prova.torrent")
-        'DECOMPRIMERE GZIP LA STRING RESTITUITA e salvarla su file .torrent
-        s.WriteLine(getHtml(TorrentCode))
-        s.Close()
-        MsgBox("Il download è stato avviato correttamente")
+        Dim Downloader As New System.Net.WebClient
+        Downloader.DownloadFile(TorrentCode, Application.StartupPath + "\Torrent\Delete.abc")
+        DecompressFile(Application.StartupPath + "\Torrent\Delete.abc", Application.StartupPath + "\Torrent\Tor.torrent")
+        System.IO.File.Delete(Application.StartupPath + "\Torrent\Delete.abc")
+        'uTorrent.exe /directory "C:\Save Path" "D:\Some folder\your.torrent"
+        Dim p As New Process
+        With p.StartInfo
+            .FileName = "C:\Program Files (x86)\uTorrent\uTorrent.exe"
+            .Arguments = "/directory """ + Application.StartupPath + "\Torrent\"" """ + Application.StartupPath + "\Torrent\Tor.torrent"""
+            .CreateNoWindow = True
+            .WindowStyle = ProcessWindowStyle.Hidden
+        End With
+        p.Start()
+        MsgBox("Download avviato correttamente")
     End Sub
 
     '***
@@ -69,5 +78,6 @@ Public Class Form1
     Private Sub BWFindDesc_RunWorkerCompleted(ByVal sender As Object, ByVal e As RunWorkerCompletedEventArgs) Handles BWFindDesc.RunWorkerCompleted
         Me.TxtDes.DocumentText = RisRicDes
         Stop_Loading()
+        LblRis.Text = "Stai visualizzando il download N." + NTor.ToString + "/" + NTorTot.ToString + " trovati"
     End Sub
 End Class

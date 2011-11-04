@@ -24,3 +24,19 @@ C:\Users\kakami\PHPTorrent\VBProj\VBProj\bin\Debug\HtmlAgilityPack.dll
 C:\Users\kakami\PHPTorrent\Project\VB dot net\VBProj\obj\x86\Debug\VBProj.exe
 C:\Users\kakami\PHPTorrent\Project\VB dot net\VBProj\obj\x86\Debug\VBProj.xml
 C:\Users\kakami\PHPTorrent\Project\VB dot net\VBProj\obj\x86\Debug\VBProj.pdb
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\bin\Debug\HtmlAgilityPack.dll
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\obj\x86\Debug\VBProj.Form1.resources
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\obj\x86\Debug\VBProj.Resources.resources
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\bin\Debug\Torrent Finder.exe.manifest
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\bin\Debug\Torrent Finder.application
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\bin\Debug\Torrent Finder.exe
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\bin\Debug\Torrent Finder.pdb
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\bin\Debug\Torrent Finder.xml
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\obj\x86\Debug\Torrent Finder.exe.manifest
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\obj\x86\Debug\Torrent Finder.application
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\obj\x86\Debug\Torrent Finder.exe
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\obj\x86\Debug\Torrent Finder.xml
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\VBProj\obj\x86\Debug\Torrent Finder.pdb

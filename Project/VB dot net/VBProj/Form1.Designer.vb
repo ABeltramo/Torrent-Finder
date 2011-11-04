@@ -24,6 +24,9 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.Tab = New System.Windows.Forms.TabControl()
         Me.Tab1 = New System.Windows.Forms.TabPage()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TxtDes = New System.Windows.Forms.WebBrowser()
+        Me.LblRis = New System.Windows.Forms.Label()
         Me.BtnPre = New System.Windows.Forms.Button()
         Me.BtnSuc = New System.Windows.Forms.Button()
         Me.BtnDow = New System.Windows.Forms.Button()
@@ -37,9 +40,11 @@ Partial Class Form1
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BWFindDesc = New System.ComponentModel.BackgroundWorker()
-        Me.TxtDes = New System.Windows.Forms.WebBrowser()
+        Me.ModificaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PreferenzeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Tab.SuspendLayout()
         Me.Tab1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -47,29 +52,58 @@ Partial Class Form1
         '
         Me.Tab.Controls.Add(Me.Tab1)
         Me.Tab.Controls.Add(Me.Tab2)
-        Me.Tab.Location = New System.Drawing.Point(4, 59)
+        Me.Tab.Location = New System.Drawing.Point(4, 41)
         Me.Tab.Name = "Tab"
         Me.Tab.SelectedIndex = 0
-        Me.Tab.Size = New System.Drawing.Size(691, 583)
+        Me.Tab.Size = New System.Drawing.Size(691, 601)
         Me.Tab.TabIndex = 0
         '
         'Tab1
         '
-        Me.Tab1.Controls.Add(Me.TxtDes)
+        Me.Tab1.Controls.Add(Me.GroupBox1)
+        Me.Tab1.Controls.Add(Me.LblRis)
         Me.Tab1.Controls.Add(Me.BtnPre)
         Me.Tab1.Controls.Add(Me.BtnSuc)
         Me.Tab1.Controls.Add(Me.BtnDow)
         Me.Tab1.Location = New System.Drawing.Point(4, 25)
         Me.Tab1.Name = "Tab1"
         Me.Tab1.Padding = New System.Windows.Forms.Padding(3)
-        Me.Tab1.Size = New System.Drawing.Size(683, 554)
+        Me.Tab1.Size = New System.Drawing.Size(683, 572)
         Me.Tab1.TabIndex = 0
         Me.Tab1.Text = "Descrizione"
         Me.Tab1.UseVisualStyleBackColor = True
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.TxtDes)
+        Me.GroupBox1.Location = New System.Drawing.Point(0, 56)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(682, 521)
+        Me.GroupBox1.TabIndex = 6
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Descrizione trovata"
+        '
+        'TxtDes
+        '
+        Me.TxtDes.Location = New System.Drawing.Point(6, 20)
+        Me.TxtDes.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.TxtDes.Name = "TxtDes"
+        Me.TxtDes.Size = New System.Drawing.Size(676, 491)
+        Me.TxtDes.TabIndex = 4
+        '
+        'LblRis
+        '
+        Me.LblRis.AutoSize = True
+        Me.LblRis.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblRis.Location = New System.Drawing.Point(107, 37)
+        Me.LblRis.Name = "LblRis"
+        Me.LblRis.Size = New System.Drawing.Size(0, 22)
+        Me.LblRis.TabIndex = 5
+        '
         'BtnPre
         '
-        Me.BtnPre.Location = New System.Drawing.Point(90, 4)
+        Me.BtnPre.Enabled = False
+        Me.BtnPre.Location = New System.Drawing.Point(110, 3)
         Me.BtnPre.Name = "BtnPre"
         Me.BtnPre.Size = New System.Drawing.Size(144, 34)
         Me.BtnPre.TabIndex = 3
@@ -78,7 +112,8 @@ Partial Class Form1
         '
         'BtnSuc
         '
-        Me.BtnSuc.Location = New System.Drawing.Point(430, 4)
+        Me.BtnSuc.Enabled = False
+        Me.BtnSuc.Location = New System.Drawing.Point(410, 3)
         Me.BtnSuc.Name = "BtnSuc"
         Me.BtnSuc.Size = New System.Drawing.Size(144, 34)
         Me.BtnSuc.TabIndex = 2
@@ -87,7 +122,8 @@ Partial Class Form1
         '
         'BtnDow
         '
-        Me.BtnDow.Location = New System.Drawing.Point(260, 4)
+        Me.BtnDow.Enabled = False
+        Me.BtnDow.Location = New System.Drawing.Point(260, 3)
         Me.BtnDow.Name = "BtnDow"
         Me.BtnDow.Size = New System.Drawing.Size(144, 34)
         Me.BtnDow.TabIndex = 1
@@ -99,7 +135,7 @@ Partial Class Form1
         Me.Tab2.Location = New System.Drawing.Point(4, 25)
         Me.Tab2.Name = "Tab2"
         Me.Tab2.Padding = New System.Windows.Forms.Padding(3)
-        Me.Tab2.Size = New System.Drawing.Size(683, 359)
+        Me.Tab2.Size = New System.Drawing.Size(683, 572)
         Me.Tab2.TabIndex = 1
         Me.Tab2.Text = "Download"
         Me.Tab2.UseVisualStyleBackColor = True
@@ -129,7 +165,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ToolStripMenuItem1})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ModificaToolStripMenuItem, Me.ToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(697, 28)
@@ -167,13 +203,18 @@ Partial Class Form1
         Me.BWFindDesc.WorkerReportsProgress = True
         Me.BWFindDesc.WorkerSupportsCancellation = True
         '
-        'TxtDes
+        'ModificaToolStripMenuItem
         '
-        Me.TxtDes.Location = New System.Drawing.Point(0, 41)
-        Me.TxtDes.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.TxtDes.Name = "TxtDes"
-        Me.TxtDes.Size = New System.Drawing.Size(680, 507)
-        Me.TxtDes.TabIndex = 4
+        Me.ModificaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreferenzeToolStripMenuItem})
+        Me.ModificaToolStripMenuItem.Name = "ModificaToolStripMenuItem"
+        Me.ModificaToolStripMenuItem.Size = New System.Drawing.Size(80, 24)
+        Me.ModificaToolStripMenuItem.Text = "Modifica"
+        '
+        'PreferenzeToolStripMenuItem
+        '
+        Me.PreferenzeToolStripMenuItem.Name = "PreferenzeToolStripMenuItem"
+        Me.PreferenzeToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
+        Me.PreferenzeToolStripMenuItem.Text = "Preferenze"
         '
         'Form1
         '
@@ -186,10 +227,13 @@ Partial Class Form1
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
+        Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "Find Torrent"
         Me.Tab.ResumeLayout(False)
         Me.Tab1.ResumeLayout(False)
+        Me.Tab1.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -212,5 +256,9 @@ Partial Class Form1
     Friend WithEvents AboutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Public WithEvents BWFindDesc As System.ComponentModel.BackgroundWorker
     Friend WithEvents TxtDes As System.Windows.Forms.WebBrowser
+    Friend WithEvents LblRis As System.Windows.Forms.Label
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents ModificaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PreferenzeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
