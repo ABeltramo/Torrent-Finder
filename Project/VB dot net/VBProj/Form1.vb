@@ -60,13 +60,18 @@ Public Class Form1
     '***
     'BACKGROUND WORKER
     '***
-
+    Private RisRic As Boolean
     Private Sub BWDes_DoWork(ByVal sender As System.Object, ByVal e As System.ComponentModel.DoWorkEventArgs) Handles BWDes.DoWork
-        RicTorrent(Me.TxtRic.Text)
+        RisRic = RicTorrent(Me.TxtRic.Text)
     End Sub
 
     Private Sub BWDes_RunWorkerCompleted(ByVal sender As Object, ByVal e As RunWorkerCompletedEventArgs) Handles BWDes.RunWorkerCompleted
-        Me.BWFindDesc.RunWorkerAsync()
+        If RisRic = False Then
+            Stop_Loading()
+            LblRis.Text = "La ricerca non ha prodotto alcun risultato."
+        Else
+            Me.BWFindDesc.RunWorkerAsync()
+        End If
     End Sub
 
     Private RisRicDes As String

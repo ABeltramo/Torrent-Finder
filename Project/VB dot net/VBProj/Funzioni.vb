@@ -23,29 +23,42 @@ Module Funzioni
         Return myPageSource
     End Function
 
-    Public Function RicTorrent(ByVal KeySrc As String)
+    Public Function RicTorrent(ByVal KeySrc As String) As Boolean
         NTorTot = 1
         Doc.LoadHtml(getHtml("http://www.kat.ph/search/" + KeySrc + "/"))
         Dim Cont As HtmlNodeCollection = Doc.DocumentNode.SelectNodes("//*[@class='torType filmType']")
         Dim node As HtmlNode
-        For Each node In Cont
-            DesTor(NTorTot) = "http://www.kat.ph" + node.GetAttributeValue("href", "-1")
-            NTorTot += 1
-        Next
+        If Cont Is Nothing Then
+            Return False
+        Else
+            For Each node In Cont
+                DesTor(NTorTot) = "http://www.kat.ph" + node.GetAttributeValue("href", "-1")
+                NTorTot += 1
+            Next
+            Return True
+        End If
     End Function
 
     Public Function FindDesc(ByVal url As String) As String
         Doc.LoadHtml(getHtml(url))
         Dim Cont As HtmlNodeCollection = Doc.DocumentNode.SelectNodes("//*[@class='siteButton giantButton verifTorrentButton']")
         Dim node As HtmlNode
-        For Each node In Cont
-            TorrentCode = node.GetAttributeValue("href", "-1")
-            Exit For
-        Next
-        Cont = Doc.DocumentNode.SelectNodes("//*[@class='textcontent']")
-        For Each node In Cont
-            Return node.InnerHtml
-        Next
+        If Cont Is Nothing Then
+            Return ""
+        Else
+            For Each node In Cont
+                TorrentCode = node.GetAttributeValue("href", "-1")
+                Exit For
+            Next
+            Cont = Doc.DocumentNode.SelectNodes("//*[@class='textcontent']")
+            If Cont Is Nothing Then
+                Return ""
+            Else
+                For Each node In Cont
+                    Return node.InnerHtml
+                Next
+            End If
+        End If
     End Function
 
     Public Function Loading()
