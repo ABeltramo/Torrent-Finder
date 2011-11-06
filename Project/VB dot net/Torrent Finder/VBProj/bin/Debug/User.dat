@@ -1,0 +1,4 @@
+#!Cartella dove verrà scaricato il file
+TxtDownload=C:\Users\kakami\Downloads
+#!Aggiornamenti automatici
+CheckAgg=True
