@@ -41,7 +41,7 @@ Module Funzioni
 
     Public Function FindDesc(ByVal url As String) As String
         Doc.LoadHtml(getHtml(url))
-        Dim Cont As HtmlNodeCollection = Doc.DocumentNode.SelectNodes("//*[@class='siteButton giantButton verifTorrentButton']")
+        Dim Cont As HtmlNodeCollection = Doc.DocumentNode.SelectNodes("//*[@class='siteButton giantButton']")
         Dim node As HtmlNode
         If Cont Is Nothing Then
             Return ""
@@ -50,13 +50,11 @@ Module Funzioni
                 TorrentCode = node.GetAttributeValue("href", "-1")
                 Exit For
             Next
-            Cont = Doc.DocumentNode.SelectNodes("//*[@class='textcontent']")
-            If Cont Is Nothing Then
+            node = Doc.DocumentNode.SelectSingleNode("//*[@class='textcontent']")
+            If node Is Nothing Then
                 Return ""
             Else
-                For Each node In Cont
-                    Return node.InnerHtml
-                Next
+                Return node.InnerHtml
             End If
         End If
     End Function

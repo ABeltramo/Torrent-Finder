@@ -28,8 +28,4 @@ Public Class Form1
         myWebResponse.Close()
         Return myPageSource
     End Function
-
-    Private Sub BtnAnn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        MsgBox("SCEMOOOOO!")
-    End Sub
 End Class

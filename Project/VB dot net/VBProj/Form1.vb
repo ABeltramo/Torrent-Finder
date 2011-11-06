@@ -13,7 +13,7 @@ Public Class Form1
     End Sub
 
     Private Sub BtnPre_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnPre.Click
-        If (NTor > 2) Then
+        If (NTor > 1) Then
             NTor -= 1
             Loading()
             Me.BWFindDesc.RunWorkerAsync()

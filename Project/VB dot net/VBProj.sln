@@ -1,12 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBProj", "VBProj\VBProj.vbproj", "{CA4535C7-D9D4-43D8-AF10-B0C43B0A6330}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TorrentFinder", "VBProj\TorrentFinder.vbproj", "{CA4535C7-D9D4-43D8-AF10-B0C43B0A6330}"
 	ProjectSection(ProjectDependencies) = postProject
 		{F3A480D9-6E0D-4B12-BF58-B5E86E79D5C0} = {F3A480D9-6E0D-4B12-BF58-B5E86E79D5C0}
 	EndProjectSection
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Updater", "Updater\Updater\Updater.vbproj", "{F3A480D9-6E0D-4B12-BF58-B5E86E79D5C0}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Torrent Finder", "Torrent Finder\Torrent Finder.vdproj", "{3607621D-4CF4-4BC2-8A93-053DF745FF22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +24,8 @@ Global
 		{F3A480D9-6E0D-4B12-BF58-B5E86E79D5C0}.Debug|x86.Build.0 = Debug|x86
 		{F3A480D9-6E0D-4B12-BF58-B5E86E79D5C0}.Release|x86.ActiveCfg = Release|x86
 		{F3A480D9-6E0D-4B12-BF58-B5E86E79D5C0}.Release|x86.Build.0 = Release|x86
+		{3607621D-4CF4-4BC2-8A93-053DF745FF22}.Debug|x86.ActiveCfg = Debug
+		{3607621D-4CF4-4BC2-8A93-053DF745FF22}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
