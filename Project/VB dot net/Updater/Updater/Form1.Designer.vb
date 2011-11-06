@@ -24,7 +24,6 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.BtnAnn = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -46,21 +45,11 @@ Partial Class Form1
         Me.ProgressBar1.TabIndex = 1
         Me.ProgressBar1.Value = 100
         '
-        'BtnAnn
-        '
-        Me.BtnAnn.Location = New System.Drawing.Point(411, 104)
-        Me.BtnAnn.Name = "BtnAnn"
-        Me.BtnAnn.Size = New System.Drawing.Size(150, 44)
-        Me.BtnAnn.TabIndex = 2
-        Me.BtnAnn.Text = "Annulla"
-        Me.BtnAnn.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(573, 160)
-        Me.Controls.Add(Me.BtnAnn)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
@@ -71,6 +60,5 @@ Partial Class Form1
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
-    Friend WithEvents BtnAnn As System.Windows.Forms.Button
 
 End Class

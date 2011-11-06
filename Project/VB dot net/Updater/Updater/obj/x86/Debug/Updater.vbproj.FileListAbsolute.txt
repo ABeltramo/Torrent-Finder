@@ -9,9 +9,6 @@ C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\Updater\obj\x8
 C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\Updater\obj\x86\Debug\Updater.exe
 C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\Updater\obj\x86\Debug\Updater.xml
 C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\Updater\obj\x86\Debug\Updater.pdb
-C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\obj\x86\Debug\Updater.exe
-C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\obj\x86\Debug\Updater.xml
-C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\obj\x86\Debug\Updater.pdb
 C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\bin\Debug\Updater.exe
 C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\bin\Debug\Updater.pdb
 C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\bin\Debug\Updater.xml
@@ -20,3 +17,6 @@ C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\obj\x86\Debug\
 C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\obj\x86\Debug\WindowsApplication1.Resources.resources
 C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\obj\x86\Debug\Updater.exe
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\obj\x86\Debug\Updater.xml
+C:\Users\kakami\Torrent-Finder\Project\VB dot net\Updater\Updater\obj\x86\Debug\Updater.pdb
